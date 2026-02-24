@@ -1,0 +1,15 @@
+.app {
+  min-height: 100vh;
+}
+
+/* Remove old glowing orbs.
+   The background is now a comic-dot pattern set in index.css body.
+   Let's just keep app clean to allow component styling to shine.
+*/
+.app::before {
+  display: none;
+}
+
+.app::after {
+  display: none;
+}

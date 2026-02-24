@@ -1,0 +1,37 @@
+.preop-page {
+    position: relative;
+    min-height: calc(100vh - var(--nav-height));
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background: var(--bg-primary);
+}
+
+.preop-page .analyze-header {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    transform: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.preop-page .analyze-title {
+    text-shadow: none;
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 8px 0;
+    color: var(--text-primary);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+}
+
+.preop-page .rec-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.preop-page .result-placeholder {
+    border-style: dashed;
+    border-color: var(--border-dark);
+}

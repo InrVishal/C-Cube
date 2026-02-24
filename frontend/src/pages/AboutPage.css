@@ -1,0 +1,124 @@
+.about-page {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    min-height: calc(100vh - var(--nav-height));
+    background: var(--bg-primary);
+}
+
+.about-page .analyze-bg,
+.about-page .analyze-orb {
+    display: none !important;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 60px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    padding: 48px 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+}
+
+.about-title {
+    font-size: clamp(32px, 5vw, 48px);
+    margin: 10px 0;
+    font-weight: 800;
+    color: var(--text-primary);
+    letter-spacing: -0.03em;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 32px;
+    margin-bottom: 60px;
+}
+
+.about-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    padding: 40px 32px;
+    border-radius: var(--radius-lg);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.about-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.08);
+}
+
+.card-icon {
+    font-size: 32px;
+    margin-bottom: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    background: rgba(79, 70, 229, 0.1);
+    border-radius: var(--radius-md);
+    color: var(--accent-indigo);
+}
+
+.about-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.about-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.metrics-section {
+    text-align: center;
+    margin-top: 60px;
+    padding: 60px 40px;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+}
+
+.metrics-section h2 {
+    color: var(--text-primary);
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.metric-box {
+    padding: 32px 24px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
+}
+
+.metric-box h4 {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--accent-indigo);
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.metric-box p {
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 14px;
+}
