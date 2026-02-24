@@ -37,9 +37,8 @@ export default function AuthPage({ navigate, onLogin }) {
                 reply_to: 'vishalpasumarty@gmail.com'
             }
 
-            // You must replace these with your actual EmailJS Service ID, Template ID, and Public Key for it to work in production
-            // For now, testing with dummy configs but logic is 100% active
-            await emailjs.send('service_l5107ge', 'template_default', templateParams, 'public_key_here')
+            // Live EmailJS Config
+            await emailjs.send('service_l5107ge', 'template_8tm1o1f', templateParams, '7e8s6IBLU52Q3Uhiq')
 
             setIsVerifying(true)
         } catch (err) {
@@ -82,10 +81,7 @@ export default function AuthPage({ navigate, onLogin }) {
                     ) : (
                         <div className="auth-header" style={{ marginBottom: '24px' }}>
                             <h2 className="auth-title">Verify Email</h2>
-                            <p className="auth-subtitle">We've generated a 6-digit code for <strong>{email}</strong>.</p>
-                            <div style={{ marginTop: '12px', padding: '10px', background: 'rgba(79, 70, 229, 0.1)', borderRadius: '6px', fontSize: '12px', color: 'var(--accent-indigo)' }}>
-                                <strong>Demo Mode Alert:</strong> Since active EmailJS API keys were not provided, your email could not be sent. <br /> Your secure login code is: <strong style={{ fontSize: '16px', letterSpacing: '2px' }}>{sentOtp}</strong>
-                            </div>
+                            <p className="auth-subtitle">We've sent a 6-digit code to <strong>{email}</strong>.</p>
                         </div>
                     )}
 
